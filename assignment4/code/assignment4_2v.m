@@ -56,17 +56,18 @@ end
 Vin(n) = xn(1);
 Vout(n) = xn(5);
 
-% figure(4)
-% plot(time,Vin,time,Vout)
-% title('Pulse Input - Vin(blue) Vout(red)')
-% 
-% figure(5)
-% plot(abs(fftshift(fft(Vin))))
-% title('FFT of Vin - Pulse Input')
-% 
-% figure(6)
-% plot(abs(fftshift(fft(Vout))))
-% title('FFT of Vout - Pulse Input')
+figure(20)
+subplot(3,1,1)
+plot(time,Vin,time,Vout)
+title('Pulse Input - Vin(blue) Vout(red) WITH INCREASED TIME STEP')
+
+subplot(3,1,2)
+plot(abs(fftshift(fft(Vin))))
+title('FFT of Vin - Pulse Input')
+
+subplot(3,1,3)
+plot(abs(fftshift(fft(Vout))))
+title('FFT of Vout - Pulse Input')
 
 %% Part 2c - Numerical Solution in Time Domain - Sine Input
 
@@ -93,18 +94,19 @@ end
 
 Vin(n) = xn(1);
 Vout(n) = xn(5);
-% 
-% figure(7)
-% plot(time,Vin,time,Vout)
-% title('Sine Input - Vin(blue) Vout(red)')
-% 
-% figure(8)
-% plot(abs(fftshift(fft(Vin))))
-% title('FFT of Vin - Sine Input')
-% 
-% figure(9)
-% plot(abs(fftshift(fft(Vout))))
-% title('FFT of Vout - Sine Input')
+
+figure(21)
+subplot(3,1,1)
+plot(time,Vin,time,Vout)
+title('Sine Input - Vin(blue) Vout(red) WITH INCREASED TIME STEP')
+
+subplot(3,1,2)
+plot(abs(fftshift(fft(Vin))))
+title('FFT of Vin - Sine Input')
+
+subplot(3,1,3)
+plot(abs(fftshift(fft(Vout))))
+title('FFT of Vout - Sine Input')
 
 %% Part 2c - Numerical Solution in Time Domain - Gaussian Pulse Input
 
@@ -136,14 +138,15 @@ end
 Vin(n) = xn(1);
 Vout(n) = xn(5);
 
-% figure(10)
-% plot(time,Vin,time,Vout)
-% title('Gaussian Pulse Input - Vin(blue) Vout(red)')
-% 
-% figure(11)
-% plot(abs(fftshift(fft(Vin))))
-% title('FFT of Vin - Gaussian Pulse Input')
-% 
-% figure(12)
-% plot(abs(fftshift(fft(Vout))))
-% title('FFT of Vout - Gaussian Pulse Input')
+figure(22)
+subplot(3,1,1)
+plot(time,Vin,time,Vout)
+title('Gaussian Pulse Input - Vin(blue) Vout(red) WITH INCREASED TIME STEP')
+
+subplot(3,1,2)
+plot(abs(fftshift(fft(Vin))))
+title('FFT of Vin - Gaussian Pulse Input')
+
+subplot(3,1,3)
+plot(abs(fftshift(fft(Vout))))
+title('FFT of Vout - Gaussian Pulse Input')
